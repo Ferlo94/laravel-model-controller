@@ -8,6 +8,11 @@
 </head>
 <body>
     <h1>I Film</h1>
-    @dump($movies)
+    <ul>
+        @foreach ($movies as $movie)
+            <li>{{$movie->title}}</li>
+        @endforeach
+        
+    </ul>
 </body>
 </html>
