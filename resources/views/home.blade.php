@@ -10,7 +10,13 @@
     <h1>I Film</h1>
     <ul>
         @foreach ($movies as $movie)
-            <li>{{$movie->title}}</li>
+            <li> 
+                <h3>Titolo:</h3>{{$movie->title}}
+                <h5>Titolo originale:</h5>{{$movie['original_title']}}
+                <h5>Paese:</h5>{{$movie['nationality']}}
+                <h5>Data di uscita:</h5>{{$movie['date']}}
+                <h5>Voto:</h5>{{$movie['vote']}}
+            </li>
         @endforeach
         
     </ul>
